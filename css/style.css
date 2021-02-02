@@ -716,6 +716,24 @@ address {
     height: 20px; 
     fill: var(--secondary-title-color);
 }
+.singup1 {
+    display: flex;
+    width: 260px;
+    border: var(--header-background-clor);
+}
+
+.signup_form {
+    display: flex;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--header-background-clor);
+}
+
 
 .clients {
     padding: 94px 0;
