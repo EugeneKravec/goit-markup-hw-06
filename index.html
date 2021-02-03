@@ -403,16 +403,18 @@
                     </li>
                 </ul>
             </div>
-            <div>
+            <div class="signup">
                 <form class="signup_form" name="signup_form" autocomplete="on" novalidate>
+                    <label class="signup-title" for="email">Подпишитесь на рассылку</label>
                     <div class="form-field">
-                        <label for="email">Подпишитесь на рассылку</label>
-                        <input type="email" name="email" id="email" />
-                    </div>                   
-                        <button type="submit">
-                        Подписаться
+                        <input class="input" type="email" name="email" id="email" placeholder="E-mail" />
+                        <button type="submit" class="signup-button">
+                            Подписаться
+                            <svg class="pic-send">
+                                <use href="./images/sprite.svg#icon-send"></use>
+                            </svg>
                         </button>
-                    
+                    </div>
                 </form>
             </div>
         </div>
