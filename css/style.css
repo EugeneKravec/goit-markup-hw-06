@@ -716,14 +716,13 @@ address {
     height: 20px; 
     fill: var(--secondary-title-color);
 }
-.singup1 {
+.form-field {
     display: flex;
-    width: 260px;
-    border: var(--header-background-clor);
+    flex-direction: column;
+    outline: 1px solid var(--header-background-clor);
 }
 
 .signup_form {
-    display: flex;
     font-family: Roboto;
     font-weight: 700;
     font-size: 14px;
