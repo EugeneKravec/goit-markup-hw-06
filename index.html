@@ -430,28 +430,40 @@
             <div class="modal-input">
                 <h2 class="title">Оставьте свои данные, мы вам перезвоним</h2>
                 <form class="input-form" name="input-form" autocomplete="on" novalidate>
-                    <label class="input-lable" for="name">Имя</label>
-                    <input class="input-area" type="text" name="name" id="name" />
-                    
-                    <label class="input-lable" for="telephone">Телефон</label>
-                    <input class="input-area" type="tel" name="telephone" id="telephone" />
-
-                    <label class="input-lable" for="email">Почта</label>
-                    <input class="input-area" type="email" name="email" id="email" />
-                    
+                    <div class="inputs">
+                        <label class="input-lable" for="name">Имя</label>
+                        <input class="input-area" type="text" name="name" id="name" />
+                        <svg class="input-icon" width="12" height="12">
+                            <use href="./images/sprite.svg#icon-man"></use>
+                        </svg>
+                    </div>
+                    <div class="inputs">
+                        <label class="input-lable" for="telephone">Телефон</label>
+                        <input class="input-area" type="tel" name="telephone" id="telephone" />
+                        <svg class="input-icon" width="13" height="13">
+                            <use href="./images/sprite.svg#icon-phone"></use>
+                        </svg>
+                    </div>
+                    <div class="inputs">
+                        <label class="input-lable" for="email">Почта</label>
+                        <input class="input-area" type="email" name="email" id="email" />
+                        <svg class="input-icon" width="15" height="12">
+                            <use href="./images/sprite.svg#icon-mail_2"></use>
+                        </svg>
+                    </div>
                     <label class="input-lable" for="comment">Комментарий</label>
                     <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
-                    <div class="deal-box">
-                    <input type="checkbox" value="Соглашение" name="" id="deal">
-                    <label class="deal-lable" for="deal">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></label>
+
+                    <div class="deal-box">                       
+                        <label class="deal-lable" for="deal">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></label>
+                        <input class="deal-input" type="checkbox" value="Соглашение" name="" id="deal" />
+                        <div>
+                        <svg class="deal-icon" width="16" height="15">
+                            <use href="./images/sprite.svg#icon-accept"></use>
+                        </svg>
+                        </div>
                     </div>
-                    <!-- <label class="input-lable" for="comment">Комментарий</label>
-                    <input class="input-area" type="text" name="comment" id="email" placeholder="Введите текст" /> -->
-            
                 </form>
-                <!-- <p class="deal">Соглашаюсь с рассылкой и принимаю 
-                    <a href="#">Условия договора</a> 
-                </p> -->
                 <button type="submit" class="input-button">Отправить</button>
             </div>
         </div>

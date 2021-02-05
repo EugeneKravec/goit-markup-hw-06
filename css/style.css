@@ -257,7 +257,6 @@ footer {
     width: 1px;
     height: 1px;
     margin: -1px;
-    …
   }
   
 .our-work-title,
@@ -819,8 +818,6 @@ address {
     width: 448px;
 }
 
-
-
 .input-area {
     width: 100%;
     padding-left: 42px;
@@ -829,6 +826,27 @@ address {
     margin-bottom: 10px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+}
+
+.input-area:focus {
+    outline: none;
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+}
+.input-area:focus + .input-icon {
+    fill: var(--accent-color);
+}
+
+.inputs {
+    position: relative;
+    width: 100%;
+}
+
+.input-icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-5%);
 }
 
 textarea {
@@ -854,11 +872,23 @@ textarea {
 }
 
 .deal-box {
+    position: relative;
     display: flex;
     margin-bottom: 30px;
     justify-content: center;
     align-items: center;
     justify-content: space-around;
+}
+
+.deal-input {
+    appearance: none;
+}
+
+.deal-icon {
+    position: absolute;
+    left: 50px;
+    fill: var(--secondary-title-color);
+    background: var(--accent-color);
 }
 
 .deal-lable {
