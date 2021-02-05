@@ -431,21 +431,27 @@
                 <h2 class="title">Оставьте свои данные, мы вам перезвоним</h2>
                 <form class="input-form" name="input-form" autocomplete="on" novalidate>
                     <label class="input-lable" for="name">Имя</label>
-                    <input class="input-area" type="text" name="name" id="text" />
+                    <input class="input-area" type="text" name="name" id="name" />
                     
                     <label class="input-lable" for="telephone">Телефон</label>
                     <input class="input-area" type="tel" name="telephone" id="telephone" />
 
                     <label class="input-lable" for="email">Почта</label>
                     <input class="input-area" type="email" name="email" id="email" />
-
+                    
                     <label class="input-lable" for="comment">Комментарий</label>
-                    <input class="input-area" type="text" name="comment" id="email" placeholder="Введите текст" />
+                    <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
+                    <div class="deal-box">
+                    <input type="checkbox" value="Соглашение" name="" id="deal">
+                    <label class="deal-lable" for="deal">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></label>
+                    </div>
+                    <!-- <label class="input-lable" for="comment">Комментарий</label>
+                    <input class="input-area" type="text" name="comment" id="email" placeholder="Введите текст" /> -->
             
                 </form>
-                <p class="deal">Соглашаюсь с рассылкой и принимаю 
+                <!-- <p class="deal">Соглашаюсь с рассылкой и принимаю 
                     <a href="#">Условия договора</a> 
-                </p>
+                </p> -->
                 <button type="submit" class="input-button">Отправить</button>
             </div>
         </div>
