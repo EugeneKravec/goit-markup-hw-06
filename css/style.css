@@ -791,13 +791,13 @@ address {
 .modal-input {
     display: flex;
     flex-direction: column;
-    width: 528px;
+    width: 100%;
+    height: 100%;
     padding-top: 40px;
 }
 
 .modal-input .title {
     margin-bottom: 12px;
-    /* padding: 40px 40px 30px; */
     text-align: center;
 
     font-family: Roboto;
@@ -820,9 +820,7 @@ address {
 
 .input-area {
     width: 100%;
-    padding-left: 42px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding: 14px 0 14px 42px;
     margin-bottom: 10px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -855,10 +853,11 @@ textarea {
     margin-bottom: 20px;
     width: 448px;
     height: 120px;
-
+    
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 }
+
 
 .input-lable {
     margin-bottom: 4px;
@@ -872,27 +871,18 @@ textarea {
 }
 
 .deal-box {
-    position: relative;
     display: flex;
-    margin-bottom: 30px;
     justify-content: center;
-    align-items: center;
-    justify-content: space-around;
 }
 
 .deal-input {
     appearance: none;
-}
-
-.deal-icon {
-    position: absolute;
-    left: 50px;
-    fill: var(--secondary-title-color);
-    background: var(--accent-color);
+    outline: none;
 }
 
 .deal-lable {
     text-align: center;
+    margin-bottom: 15px;
     
     font-family: Roboto;
     font-weight: 400;
@@ -903,10 +893,29 @@ textarea {
     color: var(--text-color);
 }
 
+.deal-lable::before {
+    content: " ";
+    display: inline-flex;
+    margin-right: 7px;
+    width: 16px;
+    height: 15px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 2px;
+}
+
+.deal-input:checked + .deal-lable::before {
+    border-radius: 2px;
+    border: 1px solid var(--accent-color);
+    background-color: var(--accent-color);
+    background-image: url(../images/accept.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .input-button {
-    display: flex;
-    justify-content: center;
     width: 200px;
+    height: 50px;
     margin-left: auto;
     margin-right: auto;
     padding: 10px 55px;
