@@ -468,6 +468,12 @@ img {
     text-decoration: none;
     margin-right: 50px;
 
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
     color: var(--primary-title-color);
 
     transition-property: color;
