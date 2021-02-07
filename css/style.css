@@ -72,13 +72,31 @@ header {
     background-color: var(--secondary-background-color);
 }
 
-.footer-contacts {
+.footer-container {
     display: flex;
+    justify-content: space-between;
+}
+
+.footer-contacts {
     padding: 60px 0;
 }
 
+.footer-logo {
+    display: flex;
+    margin-bottom: 20px;
+    text-decoration: none;
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+
+    color: var(--accent-color);
+}
+
 .footer-social {
-    margin-left: 70px;
+    padding: 60px 0;
 }
 
 .footer-social .title {
@@ -460,20 +478,6 @@ img {
     color: var(--accent-color);
 }
 
-.footer-logo {
-    display: flex;
-    margin-bottom: 20px;
-    text-decoration: none;
-
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-
-    color: var(--accent-color);
-}
-
 .list {
     color: var(--primary-title-color);
     list-style: none;
@@ -709,18 +713,20 @@ address {
     fill: var(--secondary-title-color);
 }
 
-.signup {
+.footer-signup {
+    width: 570px;
+    padding: 60px 0;
 
 }
 
 .form-field {
     display: flex;
+    justify-content: space-between;
 }
 
 .signup-input {
     width: 358px;
-    height: 50px;
-    padding-left: 15px;
+    padding: 15px 0 15px 15px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -760,7 +766,6 @@ address {
     width: 200px;
     height: 50px;
     padding: 13px;
-    margin-left: 10px;
 
     font-family: Roboto;
     font-weight: 700;
