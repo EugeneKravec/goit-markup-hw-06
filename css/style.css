@@ -68,19 +68,22 @@ header {
     background-color: var(--secondary-title-color);
 }
 
-footer {
-    padding: 60px 0;
+.footer {
     background-color: var(--secondary-background-color);
 }
-.footer-container {
+
+.footer-contacts {
     display: flex;
-    justify-self: center;
+    padding: 60px 0;
 }
 
-.footer-item {
+.footer-social {
+    margin-left: 70px;
+}
+
+.footer-social .title {
     padding-top: 12px;
     padding-bottom: 20px;
-    margin-left: 70px;
 
     font-weight: 700;
     font-size: 14px;
@@ -89,6 +92,37 @@ footer {
     text-transform: uppercase;
 
     color: var(--secondary-title-color);;
+}
+
+.footer-box {
+    display: flex;
+    justify-content: space-between;
+    width: 206px;
+}
+
+.social-unit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;   
+}
+
+.footer-box .social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-box .social-link:focus,
+.footer-box .social-link:hover {
+    background: var(--accent-color);
+    outline-style: none;
 }
 
 .hero {
@@ -606,7 +640,7 @@ address {
 }
 
 .project-container {
-    padding: 94px 0;
+    padding: 94px 15px;
 }
 
 .our-team-people {
@@ -666,38 +700,6 @@ address {
     height: 20px;
 }
 
-.footer-box {
-    display: flex;
-    justify-content: space-around;
-    width: 206px;
-    margin-left: 70px;
-}
-
-.social-unit {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;   
-}
-
-.footer-box .social-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-
-    background: rgba(255, 255, 255, 0.1);
-}
-
-.footer-box .social-link:focus,
-.footer-box .social-link:hover {
-    background: var(--accent-color);
-    outline-style: none;
-}
-
 .pic-instagram,
 .pic-twitter,
 .pic-facebook,
@@ -708,12 +710,7 @@ address {
 }
 
 .signup {
-    display: flex;
-    justify-content: flex-end;
-    width: 570px;
-    margin-left: 93px;
-    margin-right: 0;
-   
+
 }
 
 .form-field {
