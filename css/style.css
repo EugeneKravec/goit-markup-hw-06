@@ -811,7 +811,7 @@ address {
 
 .input-area {
     width: 100%;
-    padding: 14px 0 14px 42px;
+    padding: 13px 0 13px 42px;
     margin-bottom: 10px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -855,6 +855,11 @@ textarea {
     
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+}
+
+.textarea:focus {
+    outline: none;
+    border: 1px solid var(--accent-color);
 }
 
 
